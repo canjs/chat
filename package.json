@@ -25,20 +25,20 @@
     "npmAlgorithm": "flat"
   },
   "dependencies": {
-    "bit-tabs": "^0.2.0",
-    "bootstrap": "^3.3.6",
-    "can": "^2.3.16",
-    "can-connect": "^0.5.0",
-    "jquery": "^2.2.1",
-    "steal": "^0.16.0",
-    "steal-socket.io": "^2.0.0"
+    "bit-tabs": "^0.2.1",
+    "bootstrap": "^3.3.7",
+    "can": "^2.3.31",
+    "can-connect": "^0.5.5",
+    "jquery": "^3.2.1",
+    "steal": "^0.16.44",
+    "steal-socket.io": "^2.0.5"
   },
   "devDependencies": {
-    "can-fixture": "^0.1.2",
-    "documentjs": "^0.4.2",
-    "funcunit": "~3.0.0",
-    "steal-qunit": "^0.1.1",
-    "steal-tools": "^0.16.0",
-    "testee": "^0.2.4"
+    "can-fixture": "^0.3.2",
+    "documentjs": "^0.4.4",
+    "funcunit": "^3.4.2",
+    "steal-qunit": "^0.1.4",
+    "steal-tools": "^0.16.8",
+    "testee": "^0.7.0"
   }
 }
