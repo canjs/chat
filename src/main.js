@@ -1,25 +1,23 @@
-import $ from 'jquery';
-import Map from "can/map/";
-import route from "can/route/";
+import can from "can";
 import template from "./main.stache!";
-import 'can/map/define/';
+import "can/map/define/";
 
 // Import components
 import "./home/";
 import "./messages/";
 
-const AppViewModel = Map.extend({
+const AppViewModel = can.Map.extend({
   define: {
     page: {
-      type: 'string'
+      type: "string"
     }
   }
 });
 
 const appState = new AppViewModel();
 
-route(':page', { page: 'home' });
-route.map(appState);
-route.ready();
+can.route(":page", { page: "home" });
+can.route.map(appState);
+can.route.ready();
 
-$("body").append(template(appState));
+can.$("body").append(template(appState));

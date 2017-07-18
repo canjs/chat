@@ -1,6 +1,6 @@
-import Component from 'can/component/';
-import Map from 'can/map/';
-import 'can/map/define/';
+import Component from 'can/component/component';
+import Map from 'can/map/map';
+import 'can/map/define/define';
 import template from './home.stache!';
 
 // Styles
