@@ -1,0 +1,44 @@
+{
+  "name": "canjs-chat",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "scripts": {
+    "test": "testee src/test.html --browsers firefox --reporter Spec",
+    "document": "documentjs",
+    "build": "steal-tools"
+  },
+  "main": "main",
+  "files": [
+    "src"
+  ],
+  "keywords": [],
+  "system": {
+    "directories": {
+      "lib": "src"
+    },
+    "npmAlgorithm": "flat"
+  },
+  "dependencies": {
+    "bit-tabs": "^0.2.0",
+    "bootstrap": "^3.3.6",
+    "can": "^2.3.16",
+    "can-connect": "^0.5.0",
+    "jquery": "^2.2.1",
+    "steal": "^0.16.0",
+    "steal-socket.io": "^2.0.0"
+  },
+  "devDependencies": {
+    "can-fixture": "^0.1.2",
+    "documentjs": "^0.4.2",
+    "funcunit": "~3.0.0",
+    "steal-qunit": "^0.1.1",
+    "steal-tools": "^0.16.0",
+    "testee": "^0.2.4"
+  }
+}
