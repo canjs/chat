@@ -1,8 +1,8 @@
-import can from 'can';
-import superMap from 'can-connect/can/super-map/';
-import tag from 'can-connect/can/tag/';
-import 'can/map/define/define';
-import io from 'steal-socket.io';
+import can from "can";
+import superMap from "can-connect/can/super-map/";
+import tag from "can-connect/can/tag/";
+import "can/map/define/define";
+import io from "steal-socket.io";
 
 export const Message = can.Map.extend({
   define: {}
@@ -13,22 +13,22 @@ Message.List = can.List.extend({
 }, {});
 
 export const messageConnection = superMap({
-  url: 'https://chat.donejs.com/api/messages',
-  idProp: 'id',
+  url: "https://chat.donejs.com/api/messages",
+  idProp: "id",
   Map: Message,
   List: Message.List,
-  name: 'message'
+  name: "message"
 });
 
-tag('message-model', messageConnection);
+tag("message-model", messageConnection);
 
-const socket = io('https://chat.donejs.com');
+const socket = io("https://chat.donejs.com");
 
-socket.on('messages created',
+socket.on("messages created",
   message => messageConnection.createInstance(message));
-socket.on('messages updated',
+socket.on("messages updated",
   message => messageConnection.updateInstance(message));
-socket.on('messages removed',
+socket.on("messages removed",
   message => messageConnection.destroyInstance(message));
 
 export default Message;
