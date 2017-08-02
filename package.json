@@ -9,7 +9,7 @@
     "url": ""
   },
   "scripts": {
-    "test": "testee src/test.html --browsers firefox --reporter Spec",
+    "test": "testee src/test.html --browsers chrome --reporter Spec",
     "document": "documentjs",
     "build": "steal-tools"
   },
