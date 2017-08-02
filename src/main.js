@@ -1,8 +1,8 @@
 import CanMap from "can-map";
 import route from "can-route";
-import can from "can";
 import template from "./main.stache!";
 import "can-map-define";
+import $ from "jquery";
 
 // Import components
 import "./home/";
@@ -22,4 +22,4 @@ route(":page", { page: "home" });
 route.map(appState);
 route.ready();
 
-can.$("body").append(template(appState));
+$("body").append(template(appState));

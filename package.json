@@ -25,9 +25,8 @@
     "npmAlgorithm": "flat"
   },
   "dependencies": {
-    "bit-tabs": "^0.2.1",
+    "bit-tabs": "^1.0.3",
     "bootstrap": "^3.3.7",
-    "can": "^2.3.31",
     "can-component": "^3.3.0",
     "can-connect": "^0.5.5",
     "can-list": "^3.2.0",
@@ -36,7 +35,8 @@
     "can-route": "^3.2.1",
     "jquery": "^3.2.1",
     "steal": "^0.16.44",
-    "steal-socket.io": "^2.0.5"
+    "steal-socket.io": "^2.0.5",
+    "steal-stache": "^3.1.0"
   },
   "devDependencies": {
     "can-fixture": "^0.3.2",
