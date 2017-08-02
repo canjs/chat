@@ -1,12 +1,14 @@
+import CanMap from "can-map";
+import route from "can-route";
 import can from "can";
 import template from "./main.stache!";
-import "can/map/define/";
+import "can-map-define";
 
 // Import components
 import "./home/";
 import "./messages/";
 
-const AppViewModel = can.Map.extend({
+const AppViewModel = CanMap.extend({
   define: {
     page: {
       type: "string"
@@ -16,8 +18,8 @@ const AppViewModel = can.Map.extend({
 
 const appState = new AppViewModel();
 
-can.route(":page", { page: "home" });
-can.route.map(appState);
-can.route.ready();
+route(":page", { page: "home" });
+route.map(appState);
+route.ready();
 
 can.$("body").append(template(appState));

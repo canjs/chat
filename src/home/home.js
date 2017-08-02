@@ -1,6 +1,6 @@
-import Component from "can/component/component";
-import Map from "can/map/map";
-import "can/map/define/define";
+import Component from "can-component";
+import CanMap from "can-map";
+import "can-map-define";
 import template from "./home.stache!";
 
 // Styles
@@ -9,10 +9,10 @@ import "../styles.less!";
 import "bit-tabs/unstyled";
 import "./home.less!";
 
-export const ViewModel = Map.extend({});
+export const ViewModel = CanMap.extend({});
 
 export default Component.extend({
   tag: "chat-home",
-  template: template,
+  view: template,
   viewModel: ViewModel
 });

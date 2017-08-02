@@ -28,7 +28,12 @@
     "bit-tabs": "^0.2.1",
     "bootstrap": "^3.3.7",
     "can": "^2.3.31",
+    "can-component": "^3.3.0",
     "can-connect": "^0.5.5",
+    "can-list": "^3.2.0",
+    "can-map": "^3.3.1",
+    "can-map-define": "^3.1.1",
+    "can-route": "^3.2.1",
     "jquery": "^3.2.1",
     "steal": "^0.16.44",
     "steal-socket.io": "^2.0.5"

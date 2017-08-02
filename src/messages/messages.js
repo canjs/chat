@@ -1,7 +1,7 @@
-import Component from "can/component/";
-import Map from "can/map/";
+import Component from "can-component";
+import CanMap from "can-map";
 import Message from "../models/message";
-import "can/map/define/";
+import "can-map-define";
 import template from "./messages.stache!";
 
 // Styles
@@ -9,7 +9,7 @@ import "bootstrap/less/bootstrap.less!";
 import "../styles.less!";
 import "./messages.less!";
 
-export const ViewModel = Map.extend({
+export const ViewModel = CanMap.extend({
   send(event) {
     event.preventDefault();
 
@@ -23,5 +23,5 @@ export const ViewModel = Map.extend({
 export default Component.extend({
   tag: "chat-messages",
   viewModel: ViewModel,
-  template
+  view: template
 });

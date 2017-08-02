@@ -1,14 +1,16 @@
+import CanList from "can-list";
+import CanMap from "can-map";
 import can from "can";
 import superMap from "can-connect/can/super-map/";
 import tag from "can-connect/can/tag/";
-import "can/map/define/define";
+import "can-map-define";
 import io from "steal-socket.io";
 
-export const Message = can.Map.extend({
+export const Message = CanMap.extend({
   define: {}
 });
 
-Message.List = can.List.extend({
+Message.List = CanList.extend({
   Map: Message
 }, {});
 
