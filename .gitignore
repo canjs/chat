@@ -34,4 +34,4 @@ db-data/
 dist/
 build/
 cache/
-.divshot-cache/
+.divshot-cache/package-lock.json
