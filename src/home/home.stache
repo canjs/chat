@@ -1,10 +1,12 @@
+<can-import from="can-stache/helpers/route" />
+
 <h1 class="page-header text-center">
   <img src="https://canjs.com/doc/static/node_modules/bit-docs-html-canjs/static/img/canjs_logo.svg"
     alt="CanJS logo" style="width: 100%;" />
   <br>Chat
 </h1>
 
-<bit-tabs tabs-class="nav nav-tabs">
+<bit-tabs tabsClass:from="'nav nav-tabs'">
   <bit-panel title="CanJS">
     <p>CanJS provides the MV*</p>
   </bit-panel>

@@ -1,4 +1,6 @@
+<can-import from="can-stache/helpers/route" />
 <can-import from="canjs-chat/models/message" />
+
 <h5><a href="{{routeUrl page='home'}}">Home</a></h5>
 
 <message-model get-list="{}" class="list-group">
@@ -14,14 +16,14 @@
   {{/each}}
 </message-model>
 
-<form class="row" ($submit)="send(%event)">
+<form class="row" on:el:submit="send(scope.event)">
   <div class="col-sm-3">
     <input type="text" class="form-control" placeholder="Your name"
-           {($value)}="name"/>
+           el:value:bind="name"/>
   </div>
   <div class="col-sm-6">
     <input type="text" class="form-control" placeholder="Your message"
-           {($value)}="body"/>
+           el:value:bind="body"/>
   </div>
   <div class="col-sm-3">
     <input type="submit" class="btn btn-primary btn-block" value="Send"/>
