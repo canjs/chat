@@ -14,6 +14,6 @@ export const ViewModel = CanMap.extend({});
 export default Component.extend({
   tag: "chat-home",
   view: template,
-  viewModel: ViewModel,
+  ViewModel: ViewModel,
   leakScope: true
 });

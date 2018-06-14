@@ -22,7 +22,7 @@ export const ViewModel = CanMap.extend({
 
 export default Component.extend({
   tag: "chat-messages",
-  viewModel: ViewModel,
+  ViewModel: ViewModel,
   view: template,
   leakScope: true
 });

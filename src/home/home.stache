@@ -6,7 +6,7 @@
   <br>Chat
 </h1>
 
-<bit-tabs tabs-class="nav nav-tabs">
+<bit-tabs tabsClass:from="'nav nav-tabs'">
   <bit-panel title="CanJS">
     <p>CanJS provides the MV*</p>
   </bit-panel>

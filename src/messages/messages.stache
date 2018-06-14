@@ -16,7 +16,7 @@
   {{/each}}
 </message-model>
 
-<form class="row" on:el:submit="send(%event)">
+<form class="row" on:el:submit="send(scope.event)">
   <div class="col-sm-3">
     <input type="text" class="form-control" placeholder="Your name"
            el:value:bind="name"/>
