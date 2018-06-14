@@ -18,7 +18,7 @@ const AppViewModel = CanMap.extend({
 
 const appState = new AppViewModel();
 
-route("{page}", { page: "home" });
+route.register("{page}", { page: "home" });
 route.data = appState;
 route.start();
 

@@ -1,19 +1,21 @@
-<can-import from="can-stache/helpers/route" />
+<can-import from="can-stache-route-helpers" />
 <can-import from="canjs-chat/models/message" />
 
 <h5><a href="{{routeUrl page='home'}}">Home</a></h5>
 
-<message-model get-list="{}" class="list-group">
-  {{#each ./value}}
-    <div class="list-group-item">
-      <h4 class="list-group-item-heading">{{name}}</h4>
-      <p class="list-group-item-text">{{body}}</p>
-    </div>
-  {{else}}
-    <div class="list-group-item">
-      <h4 class="list-group-item-heading">No messages</h4>
-    </div>
-  {{/each}}
+<message-model get-list='{}' class="list-group">
+  {{#if isResolved}}
+    {{#each ./value}}
+      <div class="list-group-item">
+        <h4 class="list-group-item-heading">{{name}}</h4>
+        <p class="list-group-item-text">{{body}}</p>
+      </div>
+    {{else}}
+      <div class="list-group-item">
+        <h4 class="list-group-item-heading">No messages</h4>
+      </div>
+    {{/each}}
+  {{/if}}
 </message-model>
 
 <form class="row" on:el:submit="send(scope.event)">

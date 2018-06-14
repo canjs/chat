@@ -10,6 +10,10 @@ import "../styles.less!";
 import "./messages.less!";
 
 export const ViewModel = CanMap.extend({
+  define: {
+    name: { type: "string" },
+    body: { type: "string" }
+  },
   send(event) {
     event.preventDefault();
 
