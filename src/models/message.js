@@ -1,14 +1,16 @@
-import can from "can";
+import CanList from "can-list";
+import CanMap from "can-map";
 import superMap from "can-connect/can/super-map/";
 import tag from "can-connect/can/tag/";
-import "can/map/define/define";
+import "can-map-define";
 import io from "steal-socket.io";
+import canAjax from "can-ajax";
 
-export const Message = can.Map.extend({
+export const Message = CanMap.extend({
   define: {}
 });
 
-Message.List = can.List.extend({
+Message.List = CanList.extend({
   Map: Message
 }, {});
 
@@ -19,6 +21,8 @@ export const messageConnection = superMap({
   List: Message.List,
   name: "message"
 });
+
+messageConnection.ajax = canAjax;
 
 tag("message-model", messageConnection);
 

@@ -1,3 +1,5 @@
+<can-import from="can-stache/helpers/route" />
+
 <h1 class="page-header text-center">
   <img src="https://canjs.com/doc/static/node_modules/bit-docs-html-canjs/static/img/canjs_logo.svg"
     alt="CanJS logo" style="width: 100%;" />
